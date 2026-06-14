@@ -7,7 +7,7 @@ type ButtonProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
 
 const variants = {
   mint: 'border-mint bg-mint text-asphalt hover:shadow-[0_0_22px_rgba(53,242,194,.45)]',
-  punch: 'border-punch bg-punch text-white hover:shadow-[0_0_22px_rgba(255,47,125,.45)]',
+  punch: 'border-punch bg-punch text-asphalt hover:shadow-[0_0_22px_rgba(255,47,125,.45)]',
   sky: 'border-skyvolt bg-skyvolt text-asphalt hover:shadow-[0_0_22px_rgba(70,180,255,.45)]',
   sticker: 'border-sticker bg-sticker text-asphalt hover:shadow-[0_0_22px_rgba(248,255,77,.45)]',
 };
