@@ -1,0 +1,81 @@
+Vladyslav Harashko
+React Native | React Developer
+Ukraine, Kyiv
+Telegram: @lapa12345
+LinkedIn: https://www.linkedin.com/in/vladyslav-harashko-4436a11a2
+
+Summary
+Experienced full-stack developer with 2+ years in software development, focusing on React, React Native, Node.js, and full-stack solutions.
+English: Intermediate (B1)
+
+Technical Summary
+Programming languages: JavaScript, TypeScript
+Backend technologies: Node.js, Express
+Frontend frameworks: React, React Native
+Mobile frameworks: React Native (EXPO | CLI)
+Version control: Git, GitHub
+Project management tools: JIRA, Trello
+Cloud platforms: AWS (S3)
+Web technologies: RESTful APIs, Websockets, Firebase
+Databases: SQLite, PostgreSQL, MongoDB
+Build tools: Webpack, Babel
+Frontend technologies: HTML5, CSS3, SASS/LESS, Tailwind, AntDesign, Responsive Design
+Security: Authentication and Authorization (OAuth, JWT)
+Other: Agile Methodologies, UI/UX Principles, NFC, Mapbox/Leaflet integration, Offline-first mobile solutions
+
+Education
+National Aerospace University 'Kharkiv Aviation Institute'
+Master in Computer Science, Sep 2023 - Dec 2024
+
+National Aerospace University 'Kharkiv Aviation Institute'
+Bachelor in Computer Science, Sep 2020 - Jun 2023
+
+Poltava Polytechnical College
+Junior Specialist in Software Engineering, Sep 2016 - Jun 2020
+
+Projects
+Planecater
+React Native Developer, USA, 3 months, team size 3-4
+https://www.planecater.com
+Catering in Aircraft
+Stack: React Native, MobX, Websockets, Axios, Firebase
+Responsibilities:
+- Developed the mobile application using Expo React Native
+- Worked on state management with MobX
+- Integrated APIs using Axios and Websockets
+
+(Un)scripted
+React Native Developer, DE, 11 months, team size 3-4
+https://unscripted.style
+A social platform built for fashion lovers. Post outfits, join styling prompts, and find looks by aesthetic.
+Stack: React Native, Zustand, Tailwind, React Query, Axios, Firebase
+Responsibilities:
+- Developed the mobile application using React Native
+- Implemented notifications background/foreground
+- Worked on state management with Zustand
+- Built responsive UI components with Tailwind
+- Integrated APIs using React Query and Axios
+
+LiteLog - Digital Attendance Control
+React Native / Full-stack Developer, DE, 12 months, team size 3-4
+https://litelog.de/en
+Digital attendance control system with offline-first mobile functionality, NFC scanning, geofencing, push notifications, and real-time updates using Socket.IO.
+Stack: React Native, React, Node.js, SQLite, PostgreSQL, Socket.IO, Firebase, Mapbox, Leaflet, TerraDraw
+Responsibilities:
+- Built mobile and web UI with React Native and React
+- Implemented backend APIs with Node.js/Express and PostgreSQL
+- Integrated real-time features using Socket.IO
+- Worked with offline-first mobile solutions and local SQLite storage
+- Implemented NFC scanning, geofencing, and push notifications
+- Maintained and improved legacy codebases, ensuring stability and scalability
+
+Production monitoring service
+Full-stack Developer, UA, 6 months, team size 3
+Developed multiple desktop and mobile applications, handling frontend with React/React Native CLI and backend with Node.js/Express.
+Stack: React, React Native, Node.js, SQLite, Websockets, i18n
+Responsibilities:
+- Built responsive UI components
+- Implemented server-side logic and real-time communication
+- Managed SQLite and other databases
+- Worked with internationalization and localization
+- Optimized code for performance and maintainability

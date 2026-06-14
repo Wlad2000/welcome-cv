@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #f8fafc;
+  background: #08080d;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(255, 47, 125, 0.2), transparent 28rem),
+    radial-gradient(circle at 82% 32%, rgba(53, 242, 194, 0.16), transparent 26rem),
+    linear-gradient(135deg, #08080d 0%, #121018 48%, #08080d 100%);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.graffiti-text {
+  text-shadow:
+    4px 4px 0 #ff2f7d,
+    -3px -3px 0 #35f2c2,
+    0 0 28px rgba(255, 255, 255, 0.25);
+}
+
+.spray-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent 78%);
+}
+
+.sticker-cut {
+  clip-path: polygon(6% 0, 96% 4%, 100% 86%, 91% 100%, 4% 94%, 0 11%);
+}
+
+.hero-scene-canvas canvas {
+  touch-action: none;
+}
+
+.slide-in-hidden {
+  opacity: 0;
+  transform: translate3d(0, 120px, 0);
+  will-change: opacity, transform;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 120px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
