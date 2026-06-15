@@ -2,10 +2,10 @@ import { useTheme } from '../context/ThemeContext';
 
 type SectionTarget = 'main' | 'about' | 'projects';
 
-const navigationItems: Array<{ label: string; target: SectionTarget }> = [
-  { label: 'Main', target: 'main' },
-  { label: 'About me', target: 'about' },
-  { label: 'Work projects', target: 'projects' },
+const navigationItems: Array<{ label: string; shortLabel: string; target: SectionTarget }> = [
+  { label: 'Main', shortLabel: 'Main', target: 'main' },
+  { label: 'About me', shortLabel: 'About', target: 'about' },
+  { label: 'Work projects', shortLabel: 'Projects', target: 'projects' },
 ];
 
 function scrollToSection(section: SectionTarget) {
@@ -30,30 +30,32 @@ export function HeaderBar() {
         strictMode ? 'border-[#c9c9c9] bg-[#f7f7f7]/95' : 'border-white/10 bg-asphalt/74'
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
-        <nav className="flex min-w-0 items-center gap-2" aria-label="Page navigation">
+      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between gap-2 px-3 sm:h-16 sm:gap-4 sm:px-6">
+        <nav className="flex min-w-0 flex-1 items-center gap-1.5 sm:gap-2" aria-label="Page navigation">
           {navigationItems.map((item) => (
             <button
               type="button"
               key={item.target}
               onClick={() => scrollToSection(item.target)}
-              className={`inline-flex h-10 items-center rounded border-0 px-3 text-xs font-black uppercase tracking-[0.12em] transition ${
+              className={`inline-flex h-9 shrink-0 items-center rounded border-0 px-2 text-[10px] font-black uppercase tracking-[0.08em] transition sm:h-10 sm:px-3 sm:text-xs sm:tracking-[0.12em] ${
                 strictMode
                   ? 'bg-white text-[#111] hover:bg-[#ececec]'
                   : 'bg-white/[0.06] text-white hover:bg-white/[0.1] hover:text-mint'
               }`}
             >
-              {item.label}
+              <span className="sm:hidden">{item.shortLabel}</span>
+              <span className="hidden sm:inline">{item.label}</span>
             </button>
           ))}
         </nav>
 
         <label
-          className={`inline-flex shrink-0 cursor-pointer items-center gap-3 rounded border-0 px-3 py-2 text-xs font-black uppercase tracking-[0.12em] ${
+          className={`inline-flex shrink-0 cursor-pointer items-center gap-2 rounded border-0 px-2 py-2 text-[10px] font-black uppercase tracking-[0.08em] sm:gap-3 sm:px-3 sm:text-xs sm:tracking-[0.12em] ${
             strictMode ? 'bg-white text-[#111]' : 'bg-white/[0.06] text-white'
           }`}
         >
-          <span>Strict mode</span>
+          <span className="sm:hidden">Mode</span>
+          <span className="hidden sm:inline">Strict mode</span>
           <input
             type="checkbox"
             checked={strictMode}
@@ -61,7 +63,7 @@ export function HeaderBar() {
             className="peer sr-only"
           />
           <span
-            className={`relative h-5 w-10 rounded-full transition after:absolute after:top-0.5 after:h-3.5 after:w-3.5 after:rounded-full after:transition peer-checked:after:translate-x-5 ${
+            className={`relative h-4 w-8 rounded-full transition after:absolute after:top-0.5 after:h-3 after:w-3 after:rounded-full after:transition peer-checked:after:translate-x-4 sm:h-5 sm:w-10 sm:after:h-3.5 sm:after:w-3.5 sm:peer-checked:after:translate-x-5 ${
               strictMode
                 ? 'bg-[#d9d9d9] after:left-1 after:bg-[#111]'
                 : 'border border-white/30 bg-black/40 after:left-1 after:bg-mint'
